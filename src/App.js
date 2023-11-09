@@ -1,9 +1,9 @@
-import Home from './Home'
+import Home from './page/Home'
 import './App.css';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
-import Contact from './Contact';
-import Meal from './Meal'
-import Visit from './Visit'
+import Contact from './page/Contact';
+import Meal from './page/Meal'
+import Visit from './page/Visit'
 
 function App() {
   return (
@@ -15,14 +15,17 @@ function App() {
       <Home />
       <Footer/>
     </>
+
+
+Le dossier components appelle vos composants qui sont appelés dans vos pages (Header, Footer etc)
     */
 
     <BrowserRouter>
       <Routes>
-        <Route path='home' element={<Home />} />
-        <Route path='meal' element={<Meal />} />
-        <Route path='visit' element={<Visit />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/meal' element={<Meal />} />
+        <Route path='/visit' element={<Visit />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </BrowserRouter>    
   );
