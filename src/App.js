@@ -6,11 +6,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      {/* header위에 div있는 거 이상하기때문에 <>빈 거로 두는 게 나음 */}
       <Header />
       <Home />
       <Footer/>
-    </div>
+    </>
   );
 }
 

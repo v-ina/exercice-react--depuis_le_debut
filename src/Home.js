@@ -1,3 +1,4 @@
+
 function Home(){
 
     const articles = [
@@ -62,24 +63,58 @@ function Home(){
         },
       ];
 
+      // je dois recuperer les trois dernierws articles publides du tableau
+      // recuperer les trois derniers de la nouvelle liste
+
+
+
+
+
+  /*
+    // mon code  
+    const publishedArticles = articles.filter(el=>el.isPublished == true)
+    const last3Articles = publishedArticles.slice(-3)
+      console.log(last3Articles);
 
     return (
-        <>
-        {articles.map((article,ind) =>{
-            return (
-                <div>
-                    {article.isPublished && 
-                    <>
-                        {ind > 2 && <p>{article.title}</p>}
-                    </>
-                    }
-                </div>
-
+      <>
+            {last3Articles.map(el=>{
+              return (                    
+                <p>{el.title}</p>
                 )
-            })  
-        }
+              })}
         </>
     )
+    */
+
+
+    // Correction de David
+    const publishedArticles = articles.filter((article) => {
+      return article.isPublished === true;
+    });
+    // on a cree un nouveau tableau(publishedArticles) qui contien que les articles.isPublished === true
+  
+    const lastThreePublishedArticles = publishedArticles.slice(-3);
+    // apres, on a encore cree un nouveau tableau(lastThreePublishedArticles) qui contien que les derniers trois element de dernier nouveau tableau (publishedArticles)
+
+    return (
+      <main>
+        <h2>Les trois derniers articles : </h2>
+        {lastThreePublishedArticles.map((article) => {
+          // on va recuperer tout les elements de tableau lastThreePublishedArticles, parce qu'il a deja que les derniers 3 elements.
+          // et on va recouperer au-dessus dans une article.
+
+          return (
+            <article>
+              <h2>{article.title}</h2>
+              <h3>{article.price}e</h3>
+            </article>
+          );
+        })}
+      </main>
+    );
+
+
 }
 export default Home
 
