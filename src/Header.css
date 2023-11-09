@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    background-color: black;
+    padding: 2rem 3rem;
+}
+.flex li:nth-child(2){
+    margin-left: auto;
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    background-color: grey;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

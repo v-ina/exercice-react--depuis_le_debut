@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+}
+article{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
