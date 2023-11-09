@@ -1,3 +1,5 @@
+import Header from './Header';
+import Footer from './Footer';
 import './Home.css'
 function Home(){
 
@@ -98,20 +100,25 @@ function Home(){
     // apres, on a encore cree un nouveau tableau(lastThreePublishedArticles) qui contien que les derniers trois element de dernier nouveau tableau (publishedArticles)
 
     return (
-      <main>
-        <h2>Les trois derniers articles : </h2>
-        {lastThreePublishedArticles.map((article) => {
-          // on va recuperer tout les elements de tableau lastThreePublishedArticles, parce qu'il a deja que les derniers 3 elements.
-          // et on va recouperer au-dessus dans une article.
+      <>
+        <Header />
+        <h1>Bienvenue A mon Blog</h1>
+        <main>
+          <h2>Les trois derniers articles : </h2>
+          {lastThreePublishedArticles.map((article) => {
+            // on va recuperer tout les elements de tableau lastThreePublishedArticles, parce qu'il a deja que les derniers 3 elements.
+            // et on va recouperer au-dessus dans une article.
 
-          return (
-            <article>
-              <h2>{article.title}</h2>
-              <h3>{article.price}e</h3>
-            </article>
-          );
-        })}
-      </main>
+            return (
+              <article>
+                <h2>{article.title}</h2>
+                <h3>{article.price}e</h3>
+              </article>
+            );
+          })}
+        </main>
+        <Footer />
+    </>
     );
 
 

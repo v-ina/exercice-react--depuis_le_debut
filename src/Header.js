@@ -10,16 +10,15 @@ function Header(){
         <header>
             <nav>
                 <ul className='flex'>
-                    <li><a href="">logoImg</a></li>
-                    <li><a href="">Best restaurant</a></li>
-                    <li><a href="">Best trip place</a></li>
+                    <li><a href="home">Acceuil</a></li>
+                    <li><a href="meal">Best restaurant</a></li>
+                    <li><a href="visit">Best trip place</a></li>
+                    <li><a href="contact">Contact</a></li>
                     <li>
                         <ProfilMenu />
                     </li>
                 </ul>
             </nav>
-
-            <h1>Bienvenue A mon Blog</h1>
         </header>
     )
 }

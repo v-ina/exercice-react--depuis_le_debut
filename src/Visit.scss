@@ -1,0 +1,17 @@
+.visit--main{
+    display: flex;
+
+    article{
+        border : none;
+        flex-direction: column;
+        p{
+            border: 1px solid black;
+            height: 200px;
+            background-color: grey;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
