@@ -1,5 +1,6 @@
 import ProfilMenu from './ProfilMenu'
-import "./Header.css";
+// import "./Header.css";
+import "./Header.scss";
 
 function Header(){
 
