@@ -1,0 +1,44 @@
+.main--monprofil{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px;
+    padding: 100px 0px;
+    margin: 50px 150px;
+    background-color: rgb(242, 242, 242);
+
+    .user{
+        width: 60%;
+        div{
+            display: flex;
+            justify-content: space-around;
+
+            .icon{
+                font-size: 5rem;
+            }
+        
+
+        }
+    }
+
+
+    .profil-img{
+        background-color: rgb(172, 172, 255);
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    h1{
+        background: none;
+        height: auto;
+    }
+    p{
+        background:none;
+        color: black;
+    }
+
+
+
+
+}

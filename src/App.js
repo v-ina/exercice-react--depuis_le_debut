@@ -4,6 +4,7 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Contact from './page/Contact';
 import Meal from './page/Meal'
 import Visit from './page/Visit'
+import Monprofil from './page/Monprofil'
 
 function App() {
   return (
@@ -22,10 +23,12 @@ Le dossier components appelle vos composants qui sont appelés dans vos pages (H
 
     <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/meal' element={<Meal />} />
         <Route path='/visit' element={<Visit />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/monprofil' element={<Monprofil />} />
+        
       </Routes>
     </BrowserRouter>    
   );

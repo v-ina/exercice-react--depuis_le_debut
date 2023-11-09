@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProfilMenu from './ProfilMenu'
 // import "./Header.css";
 import "./Header.scss";
@@ -7,12 +8,12 @@ function Header(){
         <header>
             <nav>
                 <ul className='flex'>
-                    <li><a href="/home">Acceuil</a></li>
-                    <li><a href="/meal">Best restaurant</a></li>
-                    <li><a href="/visit">Best trip place</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/">Acceuil</Link></li>
+                    <li><Link to="/meal">Best restaurant</Link></li>
+                    <li><Link to="/visit">Best trip place</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                     <li>
-                        <ProfilMenu />
+                        <Link to="/monprofil"><ProfilMenu /></Link>
                     </li>
                 </ul>
             </nav>
